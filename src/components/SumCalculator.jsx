@@ -20,8 +20,11 @@ const SumCalculator = () => {
     }
 
     setError("");
+
     const sum = Number(number1) + Number(number2);
-    setResult(sum);
+
+    // làm tròn thông minh: tối đa 10 chữ số, bỏ số 0 thừa
+    setResult(parseFloat(sum.toPrecision(10)));
   };
 
   return (
