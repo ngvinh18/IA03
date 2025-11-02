@@ -21,7 +21,7 @@ const SumCalculator = () => {
 
     setError("");
     const sum = Number(number1) + Number(number2);
-    setResult(parseFloat(sum.toFixed(2)));
+    setResult(sum);
   };
 
   return (
