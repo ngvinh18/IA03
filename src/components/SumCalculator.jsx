@@ -25,23 +25,26 @@ const SumCalculator = () => {
 
   return (
     <div className="sum-container">
-      <h2>🧮 Sum Calculator</h2>
+      <div className="header-box">Sum Calculator</div>
+
       <div>
-        <label>Number 1: </label>
+        <label>Number 1:</label>
         <input
           type="text"
           value={number1}
           onChange={(e) => setNumber1(e.target.value)}
         />
       </div>
+
       <div>
-        <label>Number 2: </label>
+        <label>Number 2:</label>
         <input
           type="text"
           value={number2}
           onChange={(e) => setNumber2(e.target.value)}
         />
       </div>
+
       <button onClick={handleCalculate}>Calculate Sum</button>
 
       {error && <p className="error">{error}</p>}

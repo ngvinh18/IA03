@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  font-family: "Inter", "Poppins", sans-serif;
+  background: linear-gradient(135deg, #dff1ff 0%, #f3e7ff 100%);
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 0;
+}
+
+/* 🧮 Card container */
+.sum-container {
+  background: #ffffff;
+  padding: 50px 40px;
+  border-radius: 28px;
+  width: 390px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08),
+              0 4px 10px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.sum-container:hover {
+  transform: translateY(-4px);
+}
+
+/* ✨ Header */
+.header-box {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2b2f77;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #5a5af0, #68a5fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 25px;
+}
+
+/* 🧾 Labels & Inputs */
+label {
+  font-weight: 600;
+  color: #444;
+  display: block;
+  text-align: left;
+  margin-bottom: 6px;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1.8px solid #e5e7eb;
+  background-color: #f9fafb;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+input:focus {
+  border-color: #5a5af0;
+  box-shadow: 0 0 0 3px rgba(90, 90, 240, 0.15);
+  background-color: #fff;
+}
+
+/* 🔘 Button */
+button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px;
+  border: none;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 600;
   color: white;
+  background: linear-gradient(135deg, #5a5af0, #68a5fb);
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(90, 90, 240, 0.3);
+  transition: all 0.25s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(90, 90, 240, 0.45);
 }
 
-@keyframes App-logo-spin {
+/* ✅ Result section */
+.result {
+  margin-top: 22px;
+  font-size: 1.3rem;
+  color: #10b981;
+  font-weight: 700;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(6px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+/* ⚠️ Error box */
+.error {
+  margin-top: 18px;
+  color: #dc2626;
+  font-weight: 600;
+  background-color: #fee2e2;
+  border-left: 5px solid #ef4444;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.95rem;
 }
