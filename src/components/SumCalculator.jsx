@@ -8,13 +8,13 @@ const SumCalculator = () => {
 
   const handleCalculate = () => {
     if (number1 === "" || number2 === "") {
-      setError("⚠️ Please enter both numbers.");
+      setError(" Please enter both numbers.");
       setResult(null);
       return;
     }
 
     if (isNaN(number1) || isNaN(number2)) {
-      setError("❌ Inputs must be valid numbers.");
+      setError(" Inputs must be valid numbers.");
       setResult(null);
       return;
     }
