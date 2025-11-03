@@ -8,7 +8,7 @@ body {
   margin: 0;
 }
 
-/* 🧮 Card container */
+/* Card */
 .sum-container {
   background: #ffffff;
   padding: 50px 40px;
@@ -24,7 +24,7 @@ body {
   transform: translateY(-4px);
 }
 
-/* ✨ Header */
+/* Header */
 .header-box {
   font-size: 1.6rem;
   font-weight: 700;
@@ -37,7 +37,7 @@ body {
   margin-bottom: 25px;
 }
 
-/* 🧾 Labels & Inputs */
+/* Labels & Inputs */
 label {
   font-weight: 600;
   color: #444;
@@ -65,7 +65,7 @@ input:focus {
   background-color: #fff;
 }
 
-/* 🔘 Button */
+/* Button */
 button {
   width: 100%;
   margin-top: 25px;
@@ -86,7 +86,7 @@ button:hover {
   box-shadow: 0 10px 24px rgba(90, 90, 240, 0.45);
 }
 
-/* ✅ Result section */
+/* Result  */
 .result {
   margin-top: 22px;
   font-size: 1.3rem;
@@ -106,7 +106,7 @@ button:hover {
   }
 }
 
-/* ⚠️ Error box */
+/* Error  */
 .error {
   margin-top: 18px;
   color: #dc2626;

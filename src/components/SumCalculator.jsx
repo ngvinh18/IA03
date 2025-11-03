@@ -23,7 +23,7 @@ const SumCalculator = () => {
 
     const sum = Number(number1) + Number(number2);
 
-    // làm tròn thông minh: tối đa 10 chữ số, bỏ số 0 thừa
+    // lam tron
     setResult(parseFloat(sum.toPrecision(10)));
   };
 
